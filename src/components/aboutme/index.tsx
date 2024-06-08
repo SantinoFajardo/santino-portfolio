@@ -5,9 +5,14 @@ import LinkedinIcon from "../../assets/linkedin.png";
 import GitHubIcon from "../../assets/github.svg";
 import CV from "../../assets/cv.png";
 import { motion } from "framer-motion";
+import images from "@/assets";
 
 const openLink = (url: string) => {
   window.open(url, "_blank");
+};
+
+const handleEmailClick = () => {
+  window.location.href = "mailto:santinofajardo02@gmail.com";
 };
 
 const AboutMe: React.FC = (): React.ReactElement => {
@@ -65,6 +70,18 @@ const AboutMe: React.FC = (): React.ReactElement => {
             />
             <Image
               src={CV}
+              alt="CV Icon"
+              className="w-10 h-10 rounded-full hover:cursor-pointer hover:shadow-md hover:shadow-black transition-all duration-200"
+            />
+            <Image
+              onClick={() => openLink("https://wa.me/3489544363")}
+              src={images.WhatsappIcon}
+              alt="CV Icon"
+              className="w-10 h-10 rounded-full hover:cursor-pointer hover:shadow-md hover:shadow-black transition-all duration-200"
+            />
+            <Image
+              onClick={() => handleEmailClick()}
+              src={images.GmailIcon}
               alt="CV Icon"
               className="w-10 h-10 rounded-full hover:cursor-pointer hover:shadow-md hover:shadow-black transition-all duration-200"
             />

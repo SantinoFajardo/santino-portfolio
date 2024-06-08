@@ -14,6 +14,8 @@ import GitHubIcon from "./github.svg";
 import GitIcon from "./git.png";
 import JiraIcon from "./jira.png";
 import ScrumIcon from "./scrum.png";
+import GmailIcon from "./gmail.png";
+import WhatsappIcon from "./whatsapp.webp";
 
 const images = {
   ReactIcon,
@@ -32,6 +34,8 @@ const images = {
   GitIcon,
   ScrumIcon,
   JiraIcon,
+  GmailIcon,
+  WhatsappIcon,
 };
 
 export default images;
