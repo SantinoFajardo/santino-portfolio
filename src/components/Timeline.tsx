@@ -15,7 +15,7 @@ const experience = [
       "Create applications and server where users are able to make payments on the blockchain on more than 15 different blockchains including evm, solana and bitcoin. Building a cross-platform mobile application, web pwa, server and dashboard for customers to be able to control payments, balances and more.",
   },
   {
-    logo: "https://sphereone.xyz/icon.svg?43d95d86b5b39d19",
+    logo: "https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/HENRY/original.PNG?1627058942",
     date: "June 2022 - October 2022",
     enterprise: "Henry Academy",
     job: "Teaching Assistant",
@@ -37,7 +37,7 @@ export const TimelineComponent = () => {
             <div className="flex flex-row gap-x-2 items-center">
               <img
                 src={item.logo}
-                className="size-5"
+                className="size-5 rounded-full"
                 alt={`${item.enterprise} logo`}
               />
               <h1 className="text-body-2 font-medium text-metal-400">
