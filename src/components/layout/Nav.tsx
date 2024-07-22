@@ -10,7 +10,7 @@ const Nav: React.FC = (): React.ReactElement => {
     });
   };
   return (
-    <nav className="w-full fixed bg-[#111111] flex items-center justify-between h-[5vh] px-2 md:px-20 bg-blend-multiply">
+    <nav className="w-full bg-opacity-75 backdrop-blur-md shadow-md bg-[#111111] fixed flex items-center justify-between h-[5vh] px-2 md:px-20 z-20">
       <div className="flex-row gap-x-2 justify-center items-center hidden md:flex">
         <img
           alt="Santino Fajardo foto"
@@ -50,10 +50,10 @@ const Nav: React.FC = (): React.ReactElement => {
         </a>
       </div>
       <div className="flex justify-center items-center gap-x-3 flex-row">
-        <a>
+        <a target="_blank" href="https://github.com/SantinoFajardo">
           <svg
             viewBox="0 0 256 250"
-            className="size-4"
+            className="size-4 hover:size-6 duration-700 transition-all"
             fill="#fff"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid">
@@ -61,9 +61,11 @@ const Nav: React.FC = (): React.ReactElement => {
           </svg>
         </a>
 
-        <a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/santino-fajardo-810a61235/">
           <svg
-            className="size-4"
+            className="size-4 hover:size-6 duration-700 transition-all"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
             viewBox="0 0 256 256">
@@ -74,10 +76,10 @@ const Nav: React.FC = (): React.ReactElement => {
           </svg>
         </a>
 
-        <a>
+        <a target="_blank" href="https://x.com/fajardo_santino">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="size-4"
+            className="size-4 hover:size-6 duration-700 transition-all"
             fill="none"
             viewBox="0 0 1200 1227">
             <path
