@@ -16,16 +16,18 @@ const ProjectCard: React.FC<{ project: Project }> = ({
 }): React.ReactElement => {
   return (
     <div className="border border-white rounded-3xl flex flex-col justify-center items-center w-full bg-black">
-      <img
-        src={project.background}
-        className="w-full object-cover rounded-t-3xl h-[200px] border-b border-white"
-      />
-      <div className="px-5 pb-5">
+      <div className="w-full hidden sm:flex">
+        <img
+          src={project.background}
+          className="w-full object-cover rounded-t-3xl h-[200px] border-b border-white"
+        />
+      </div>
+      <div className="px-5 pb-5 text-center sm:text-start">
         <h3 className="text-xl pt-3 font-semibold">{project.title}</h3>
         <p className="text-sm md:text-base">{project.description}</p>
 
         <h4 className="font-semibold">Languages:</h4>
-        <div className="mt-1 flex flex-row flex-wrap gap-x-2">
+        <div className="mt-1 flex flex-row flex-wrap gap-x-2 justify-center sm:justify-start">
           {project.languages.map((item: any, index: number) => (
             <div key={index}>
               <TooltipProvider>
@@ -39,7 +41,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({
         </div>
 
         <h4 className="font-semibold mt-3">Technologies:</h4>
-        <div className="mt-1 flex flex-row flex-wrap gap-x-2">
+        <div className="mt-1 flex flex-row flex-wrap gap-x-2 justify-center sm:justify-start">
           {project.tecnologies.map((item, index: number) => (
             <div key={index}>
               <TooltipProvider>
@@ -54,7 +56,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({
 
         <h4 className="font-semibold mt-3">Others:</h4>
         <div className="mt-1 flex flex-col gap-y-2 sm:flex-row justify-between">
-          <div className="flex flex-row flex-wrap gap-x-2">
+          <div className="flex flex-row flex-wrap gap-x-2 justify-center sm:justify-start">
             {project.others.map((item, index: number) => (
               <div key={index}>
                 <TooltipProvider>

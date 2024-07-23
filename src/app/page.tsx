@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function Home() {
+export default function Home(): React.ReactElement {
   useEffect(() => {
     AOS.init();
   }, []);
