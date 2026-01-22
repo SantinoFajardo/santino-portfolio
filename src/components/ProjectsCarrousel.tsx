@@ -101,7 +101,7 @@ const projects = [
         alt="Santino Fajardo foto"
         className="size-8 rounded-full"
         src={
-          "https://media.licdn.com/dms/image/D4D03AQFjTe2xq2_7ZA/profile-displayphoto-shrink_400_400/0/1721099248439?e=1727308800&v=beta&t=cncRLLBAACEDdLk-G2zoN5AIBiH1w2w4SQDT51tJipI"
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcfR8KylILANWQo92FzenfAAyJzP40M9l0Dw&s"
         }
       />
     ),
@@ -123,6 +123,33 @@ const projects = [
     link: "https://github.com/SantinoFajardo/simple_bank",
     background:
       "https://github.com/techschool/simplebank/raw/master/backend-master.png",
+  },
+  {
+    icon: (
+      <img
+        alt="Santino Fajardo foto"
+        className="size-8 rounded-full"
+        src={
+          "https://zengo.com/wp-content/uploads/Bitcoin-to-ETH.png"
+        }
+      />
+    ),
+    title: "Btc and Eth RPC nodes",
+    languages: [languages.Typescript, languages.Javascript, languages.Typescript, languages.Python],
+    others: [
+      others.Git,
+      others.GitHub,
+      others.AWS,
+      others.gRPC,
+      others.Docker,
+      others.Kubernetes,
+      others.Mongodb,
+    ],
+    tecnologies: [technologies.Gin, technologies.Linux],
+    description: `This application deploys two independent servers to run native Bitcoin and Ethereum JSON-RPC nodes, providing dedicated RPC endpoints for each blockchain. A gateway server, implemented in Golang, acts as a single entry point for clients, forwarding and orchestrating all requests to the underlying Bitcoin and Ethereum RPC nodes. This gateway abstracts the complexity of interacting with multiple blockchain protocols, offering a unified API surface and handling request routing, authentication, and response formatting between clients and both blockchain backends.`,
+    link: "https://github.com/SantinoFajardo/simple_bank",
+    background:
+      "https://bunny-wp-pullzone-nb318evfcx.b-cdn.net/wp-content/uploads/2022/07/node-1024x527.png",
   },
 ];
 

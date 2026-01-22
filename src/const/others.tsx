@@ -46,4 +46,8 @@ export const others = {
     title: "PostgreSQL",
     icon: <PostgreSQL className="size-6" />,
   },
+  Mongodb: {
+    title: "MongoDB",
+    icon: <img src="https://icon-icons.com/download-file?file=https%3A%2F%2Fimages.icon-icons.com%2F2415%2FPNG%2F512%2Fmongodb_original_wordmark_logo_icon_146425.png&id=146425&pack_or_individual=pack" className="size-6" />,
+  }
 };

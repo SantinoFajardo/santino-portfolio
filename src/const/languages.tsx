@@ -15,4 +15,8 @@ export const languages = {
     title: "Golang",
     icon: <Go className="size-6" />,
   },
+  Python: {
+    title: "Python",
+    icon: <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/500px-Python-logo-notext.svg.png"} className="h-6 w-6" />,
+  },
 };

@@ -76,4 +76,9 @@ export const technologies = {
       />
     ),
   },
+  Linux: {
+    title: "Linux",
+    language: languages.Typescript,
+    icon: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Icons8_flat_linux.svg/960px-Icons8_flat_linux.svg.png" className="size-6" />,
+  }
 };
